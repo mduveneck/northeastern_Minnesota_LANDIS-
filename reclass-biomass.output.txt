@@ -1,0 +1,61 @@
+LandisData  "Output Biomass Reclass"
+Timestep  10
+>>           Reclass
+>> Species   Coefficient
+>> --------  -----------
+
+ReclassMaps
+
+>> Map Name    Forest Type    Species
+>> --------    -------------  -------
+reclass1 ->	1northernhard	acersacc prunsero querrubr tiliamer tsugcana -popugran -poputrem
+			2white_pine		pinustro 
+			3aspen_birch  	poputrem popugran betupapy -acersacc -abiebals
+			4red_jack_pine	pinubank pinuresi
+			5oak 			querrubr queralba querelli quermacr carycord quervelu -picemari -piceglau
+			6spuce_fir		picemari abiebals piceglau thujocci -acersacc -pinubank
+			
+>>RECLASS TO DEFINE HARVESTABLE PRESCRIPTIONS USING R SCRIPT: "PRESCRIPTION_VIA_RECLASS_MAPS_FOR_EACH_MANAGEMENT_AREA.R" 1-23-2013 			
+>>		reclass2 ->	1AspenPBirch	popugran poputrem betupapy
+>>			2BlackSpruce	picemari
+>>			3JackPine		pinubank
+>>			4NoHard			acerrubr acersacc betualle fraxnigr fraxpenn prunsero tiliamer ulmuamer -popugran -poputrem -betupapy -abiebals		
+>>			5NOaks			quermacr  querrubr  queralba
+>>			6RedPine		pinuresi
+>>			7WhitePine		pinustro
+>>			8Sprucefir		abiebals piceglau
+>>KEEP THIS ONE OUT	9WCedar			thujocci
+
+
+>>Old reclass without (-) species.
+>>reclass ->	1SpruceFirCedar	abiebals piceglau picemari thujocci
+>>	2Aspen_birch	popugran	poputrem  betupapy
+>>3Pine	pinustro pinuresi pinubank
+>>4northern_oak quermacr  querrubr			
+>>5north_hardwoods  tiliamer prunsero ulmuamer acersacc acerrubr fraxnigr	fraxpenn  betualle
+>>6southern_planted querelli  queralba  carycord  fraxamer tsugcana
+
+>>reclass ->	1SpruceFirCedar	abiebals piceglau picemari thujocci
+>>	2Aspen_birch	popugran	poputrem  betupapy 
+>>		3Pine	pinustro pinuresi pinubank
+>>		4northern_oak quermacr  querrubr queralba 			
+>>		5north_hardwoods  tiliamer prunsero ulmuamer acersacc acerrubr fraxnigr	fraxpenn betualle -quermacr -querrubr -poputrem -popugran
+>>		6southern_planted querelli  queralba  carycord  fraxamer tsugcana	
+		
+			
+>>These reclass groups are for the percent veg type in each harvest prescription to get the adjustment factors.	
+>>reclass2 ->	1MESIC_NORTHERN_HARDWOODS	acersacc  betualle  thujocci querrubr
+	>>			2MESIC_HARDWOODS_NORTHERN_WET_MESIC_BOREAL_HARWOOD_CONIFER  popugran	poputrem  betupapy
+	>>			3MESIC_MIXED_FIRE_DEPENDENT  abiebals	piceglau	
+	>>			4DRY_MESIC	pinuresi	pinustro	picemari
+	>>			5DRY pinubank	  
+		
+		
+		
+>>THIS GROUP IS FOR THE MINNESOTA NATIVE PLANT COMMUNITY GROUPINGS.  Developed for july 2012 vulnerability assesment.
+>>reclass3 ->	1FIRE_DEPENDENT pinuresi pinubank poputrem betupapy pinustro -acerrubr -prunsero -tiliamer -fraxnigr -fraxpenn -ulmuamer
+	>>		2MESIC_HARDWOOD tiliamer prunsero acersacc acerrubr betualle querrubr querelli  queralba  carycord abiebals -fraxnigr -fraxpenn -pinuresi -pinubank -ulmuamer
+	>>		3FLOOD_PLAIN_and_WET_FOREST_SYSTEM fraxnigr thujocci fraxpenn betualle ulmuamer abiebals -picemari
+	>>		4FORESTED_RICH_PEATLAND picemari abiebals piceglau
+
+MapFileNames   output/reclass/{reclass-map-name}-{timestep}.img

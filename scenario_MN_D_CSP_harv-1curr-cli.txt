@@ -1,0 +1,32 @@
+LandisData  Scenario
+Duration  150
+
+Species      "Y:/mn_mi_output/PSU_J/Landis_MN_inputs/eco_spp_inc/MN_species_6_14_2013.txt"
+Ecoregions      "Y:/mn_mi_output/PSU_J/Landis_MN_inputs/eco_spp_inc/MN_Ecoregions.txt"
+EcoregionsMap   "Y:/mn_mi_output/PSU_J/Landis_MN_inputs/rasters/mn_cli_eco_1000a.img"
+CellLength  142 << meters
+
+
+>> Succession Extension     Initialization File
+>> --------------------	    -------------------
+"Biomass Succession"        "Y:/mn_mi_output/PSU_J/Landis_MN_inputs/biomass_succession/Biomass-succession-cur_cli.txt" 
+
+>> Disturbance Extensions   Initialization File
+>> ----------------------   -------------------
+
+"Base Wind"		    "Y:/mn_mi_output/PSU_J/Landis_MN_inputs/wind_files/wind_patches.txt"
+"Biomass Harvest"   "Y:/mn_mi_output/PSU_J/Landis_MN_inputs/harvest_files/MN_Harvest_CSP_2013.txt"
+"Base Fire"		     "Y:/mn_mi_output/PSU_J/Landis_MN_inputs/fire_files/Fire_11_1_2011.txt" 
+
+>> DisturbancesRandomOrder  yes  << optional parameter; default = no
+
+
+>> Other Extensions         Initialization File
+>> ----------------         -------------------
+>>   "Max Species Age"	   	"Y:/mn_mi_output/PSU_J/Landis_MN_inputs/max-spp-age.output.txt"
+"Output Biomass"    		"Y:/mn_mi_output/PSU_J/Landis_MN_inputs/simulation_output_extention_options/output-biomass.txt"
+"Output Biomass Reclass"	"Y:/mn_mi_output/PSU_J/Landis_MN_inputs/simulation_output_extention_options/reclass-biomass.output.txt"
+>>"Output Cohort Statistics" "Y:/mn_mi_output/PSU_J/Landis_MN_inputs/cohort-stats.output.txt"
+
+>>RandomNumberSeed  4,357  << optional parameter; default = the seed is
+                         << randomly generated using the current time

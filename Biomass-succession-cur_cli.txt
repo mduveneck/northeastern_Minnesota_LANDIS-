@@ -1,0 +1,114 @@
+LandisData "Biomass Succession"
+
+Timestep	5																											
+SeedingAlgorithm	WardSeedDispersal																											
+
+InitialCommunities      "Y:/mn_mi_output/PSU_J/Landis_MN_inputs/Eco_spp_inc/InitialCommunity_v17.txt"
+InitialCommunitiesMap   "Y:/mn_mi_output/PSU_J/Landis_MN_inputs/rasters/InitialCommunity-v5_1.img"
+
+SpinupMortalityFraction	0.01
+
+MinRelativeBiomass																																																								
+
+>> Shade	Min Relative Biomass (% Maximum Biomass)																											
+>> Class	by Ecoregions																											
+>> ----------	--------------------																											
+	Eco1072	Eco1102	Eco1133	Eco1226	Eco1441	Eco2072	Eco2102	Eco2133	Eco2226	Eco2441	Eco3036	Eco3072	Eco3102	Eco3226	Eco3441	Eco4036	Eco4072	Eco4102	Eco4133	Eco4226	Eco4441	Eco5036	Eco5102	Eco5133	Eco5226	Eco5441	Eco6036	Eco6133	Eco6226	Eco6441	Eco7133	Eco7226	Eco7441
+1	15%	15%	15%	15%	15%	15%	15%	15%	15%	15%	15%	15%	15%	15%	15%	15%	15%	15%	15%	15%	15%	15%	15%	15%	15%	15%	15%	15%	15%	15%	15%	15%	15%
+2	25%	25%	25%	25%	25%	25%	25%	25%	25%	25%	25%	25%	25%	25%	25%	25%	25%	25%	25%	25%	25%	25%	25%	25%	25%	25%	25%	25%	25%	25%	25%	25%	25%
+3	50%	50%	50%	50%	50%	50%	50%	50%	50%	50%	50%	50%	50%	50%	50%	50%	50%	50%	50%	50%	50%	50%	50%	50%	50%	50%	50%	50%	50%	50%	50%	50%	50%
+4	80%	80%	80%	80%	80%	80%	80%	80%	80%	80%	80%	80%	80%	80%	80%	80%	80%	80%	80%	80%	80%	80%	80%	80%	80%	80%	80%	80%	80%	80%	80%	80%	80%
+5	95%	95%	95%	95%	95%	95%	95%	95%	95%	95%	95%	95%	95%	95%	95%	95%	95%	95%	95%	95%	95%	95%	95%	95%	95%	95%	95%	95%	95%	95%	95%	95%	95%
+
+
+SufficientLight
+>> Spp Shade	Probability
+>> Class	by Actual Shade
+>> ----------	--------------------	
+>>		0	1	2	3	4	5
+	1	1.0	0.25	0.0	0.0	0.0	0.0
+	2	1.0	1.0	0.25	0.0	0.0	0.0
+	3	1.0	1.0	0.8	0.25	0.0	0.0
+	4	1.0	1.0	1.0	0.8	0.25	0.0
+	5	0.0	0.25	0.8	1.0	1.0	1.0
+	
+
+SpeciesParameters		
+>>adjusted shape value (.5 for early succesional, and .7 for late succesional spp)
+>> Species   Leaf	WoodyBiomass	Mortality	growth	Leaf
+>>	     Longevity	DecayRate	Shape	curve	Lignin%
+>> --------  ---------	---------	----------	------
+   abiebals   3.0	0.1		10	0.5			0.2   <<0.5	
+   acerrubr   1.0	0.1		10	0.55		0.1   <<0.55
+   acersacc   1.0	0.1		10	0.5			0.1   <<0.5	
+   betualle   1.0	0.1		10	0.6			0.1   <<0.6	
+   betupapy   1.0	0.1		10	0.55		0.1   <<0.55
+   carycord   1.0	0.1		10	0.6		    0.15  <<0.6	
+   caryovat	1.0		0.1		10	0.6			0.15	<<0.6	
+   castdent	1.0		0.1		10  0.6			0.15  <<0.6
+   fagugran	  1.0	0.1		6.5	0.65		0.24  <<0.65
+   fraxamer   1.0	0.1		5	0.65		0.1   <<0.65
+   fraxnigr   1.0	0.1		5	0.65		0.1   <<0.65
+   fraxpenn   1.0	0.1		5	0.65		0.1   <<0.65
+   piceglau   3.0	0.1		10	0.5			0.2   <<0.5	
+   picemari   3.0	0.1		10	0.5			0.2   <<0.5	
+   pinubank   3.0	0.1		10	0.5			0.3   <<0.5	
+   pinuresi   3.0	0.1		10	0.6			0.3   <<0.6	
+   pinustro   3.0	0.1		10	0.6			0.3   <<0.6	
+   pinusylv   4.0	0.1		10	0.6			0.2   <<0.6	
+   popubals   1.0	0.1		10	0.6			0.1   <<0.6	
+   popugran   1.0	0.1		10	0.7			0.1   <<0.7	
+   poputrem   1.0	0.1		10	0.7			0.1   <<0.7	
+   prunsero   1.0	0.1		10	0.65		0.1   <<0.65
+   queralba	  1.0	0.1		10	0.65		0.12  <<0.65
+   quercocc	1.0		0.1		10	0.65		0.15	<<0.65
+   querelli   1.0	0.1		10	0.6			0.15  <<0.6	
+   querfalc		1.0		0.1		10	0.6			0.15	<<0.6
+   quermacr   1.0	0.1		10	0.65		0.15  <<0.65
+   querrubr   1.0	0.1		10	0.6			0.15  <<0.6	
+   quervelu   1.0	0.1		10	0.65		0.13  <<0.65
+   thujocci   4.0	0.1		10	0.7			0.2   <<0.7	
+   tiliamer   1.0	0.1		10	0.7			0.1   <<0.7	
+   tsugcana	  3.0	0.1		10	0.5			0.2	  <<0.5		
+   ulmuamer   1.0	0.1		10	0.7			0.1   <<0.7	
+   
+EcoregionParameters
+>>		AET
+>>		mm
+Eco1072	600
+Eco1102	600
+Eco1133	600
+Eco1226	600
+Eco1441	600
+Eco2072	600
+Eco2102	600
+Eco2133	600
+Eco2226	600
+Eco2441	600
+Eco3036	600
+Eco3072	600
+Eco3102	600
+Eco3226	600
+Eco3441	600
+Eco4036	600
+Eco4072	600
+Eco4102	600
+Eco4133	600
+Eco4226	600
+Eco4441	600
+Eco5036	600
+Eco5102	600
+Eco5133	600
+Eco5226	600
+Eco5441	600
+Eco6036	600
+Eco6133	600
+Eco6226	600
+Eco6441	600
+Eco7133	600
+Eco7226	600
+Eco7441	600
+
+
+DynamicInputFile "Y:/mn_mi_output/PSU_J/Landis_MN_inputs/dynamic_inputs/pnt_to_landis_current_8_25_2014.txt"
+AgeOnlyDisturbances:BiomassParameters "Y:/mn_mi_output/PSU_J/Landis_MN_inputs/biomass_succession/biomass_age-only-disturbances.txt"
