@@ -1,4 +1,6 @@
-Climate files in .clm format (can be changed to .txt) for use in the pnet-for-landis tool used in biomass-succession and landis-II for the following publications for the Minnesota landscape.  
+Climate files in .clm format (can be changed to .txt) for use in the pnet-for-landis tool used in biomass-succession and landis-II for the following publications for the Minnesota landscape.  Eahc climate file refers to a climate scenario and climate region. Regions are deliniated in the  mn_cli_eco_1000a.img ecoregion map found in the directory above.  
+
+
 Duveneck, M. J., and R. M. Scheller. 2015. Measuring and managing resistance and resilience under climate change in northern Great Lake forests (USA). Landscape Ecology. DOI 10.1007/s10980-015-0273-6.
 Duveneck, M. J., and R. M. Scheller. 2015. Climate change effects to productivity and functional diversity in northern Great Lake forests with climate suitable planting. Ecological Applications. 25-6. Pages 1653-1668. DOI 10.1890/14-0738.1.
 Duveneck, M. J., R. M. Scheller, and M. White, A. 2014. Effects of alternative forest management strategies in the face of climate change in the northern Great Lake region. Canadian Journal of Forest Research. 44-700-710 (2014).
